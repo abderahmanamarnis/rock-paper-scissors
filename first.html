@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+</head>
+<body>
+   <button  onclick="check('rock')" >rock</button>
+   <button onclick="check('paper')" >paper</button>
+   <button onclick="check('scissors')" >scissors</button>
+   <script>
+     const arm = ["rock", "paper", "scissors"] 
+function check(selectedValue){
+  let bt = document.querySelectorAll("button")
+  let random = Math.floor( Math.random()*arm.length)  
+  let computerChoice = arm[random];
+       
+       console.log("User choice: " + selectedValue);
+       console.log("Computer choice: " + computerChoice);
+
+}
+   </script>
+</body>
+</html>
